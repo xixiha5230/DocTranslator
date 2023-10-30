@@ -1,0 +1,9 @@
+# book
+*.pdf
+*.epub
+*.txt
+!requirements.txt
+.vscode
+__pycache__
+# config
+settings.cfg
