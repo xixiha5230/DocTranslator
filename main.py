@@ -10,6 +10,7 @@ file_type_to_parser = {
 translator_type_to_translator = {
     "gpt": "translator.gpt.GPTTranslator",
     "google": "translator.google.GoogleTranslator",
+    "volc": "translator.volc.Volc",
 }
 
 
@@ -23,7 +24,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process some integers.")
     parser.add_argument("--input", help="Input file path", required=True)
     parser.add_argument("--output", help="Output file path", required=True)
-    parser.add_argument("--translator", help="Translator type", required=True)
+    parser.add_argument("--translator", help="Translator type", default="google")
     args = parser.parse_args()
     out_path = args.output
     in_path = args.input

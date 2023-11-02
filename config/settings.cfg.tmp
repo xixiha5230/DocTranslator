@@ -1,13 +1,13 @@
-
-[option]
+[gpt]
 #API key(s) for OpenAI API, e.g. "sk-xxxxxx" or "sk-xxxxxx,sk-xxxxxx"
 openai-apikey = sk-
-
 #API Proxy Url, e.g. https://api.openai-proxy.com
 openai-proxy =
-
-#Target language for translation, e.g. "en", "zh-cn", "ja",or "繁体中文","文言文"
-# target-language setting is deprecated, please use prompt setting instead
-
 #set prompt, you can change Chinese to "en", "zh-cn", "ja", "繁体中文","文言文", or "红楼梦风格的半文言文" etc
 prompt = "Please behave like GPT-4 model, translate the following text into Chinese."
+
+[volc]
+# volc access key. free to get from https://translate.volcengine.com/api
+k_access_key = 
+# volv secret key. free to get from https://translate.volcengine.com/api
+k_secret_key = 
