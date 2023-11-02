@@ -2,8 +2,10 @@
 *.pdf
 *.epub
 *.txt
+*.docx
+*.doc
 !requirements.txt
-.vscode
-__pycache__
 # config
 settings.cfg
+.vscode
+__pycache__
