@@ -14,12 +14,12 @@ from translator.translator import Translator
 
 
 class PdfParser:
-    def __init__(self, in_path, out_path) -> None:
+    def __init__(self, in_path, out_path, translator: Translator) -> None:
         pdfmetrics.registerFont(TTFont("SimSun", "./fonts/SIMSUN.TTC"))
-        self.translator = Translator()
         self.lock = threading.Lock()
         self.runner = Runner()
         self.canvas = Canvas(out_path)
+        self.translator = translator
         self.in_path = in_path
         self.out_path = out_path
 
